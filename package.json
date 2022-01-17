@@ -2,12 +2,16 @@
   "name": "reactjs",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.13.1"
+  },
   "main": "index.js",
   "scripts": {
-    "build:dev": "cross-env NODE_ENV=development webpack",
-    "build:prod": "cross-env NODE_ENV=production webpack",
+    "build:dev": "cross-env NODE_ENV=development webpac",
+    "build": "cross-env NODE_ENV=production webpack",
     "dev": "cross-env NODE_ENV=development CLIENT_ID=l22-ZBOFQTmsXZgZ5Fu5IQ node ./bin/dev.js",
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./dist/server/server.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +20,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "@types/react-router-dom": "^5.3.2",
+    "axios": "^0.21.4",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-hook-form": "^7.22.3",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "react-tinder-card": "^1.4.0",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.4.1",
     "@hot-loader/react-dom": "^17.0.1",
     "@types/classnames": "^2.3.1",
     "@types/enzyme": "^3.10.10",
@@ -46,20 +63,5 @@
     "webpack-dev-server": "^3.11.1",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-node-externals": "^2.5.2"
-  },
-  "dependencies": {
-    "@types/react-router-dom": "^5.3.2",
-    "axios": "^0.21.4",
-    "cross-env": "^7.0.3",
-    "express": "^4.17.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-hook-form": "^7.22.3",
-    "react-redux": "^7.2.6",
-    "react-router-dom": "^6.2.1",
-    "react-tinder-card": "^1.4.0",
-    "redux": "^4.1.2",
-    "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.4.1"
   }
 }
