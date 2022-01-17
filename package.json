@@ -9,9 +9,9 @@
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development webpac",
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "cross-env NODE_ENV=development CLIENT_ID=l22-ZBOFQTmsXZgZ5Fu5IQ node ./bin/dev.js",
+    "dev": "cross-env PORT=3000 NODE_ENV=development CLIENT_ID=l22-ZBOFQTmsXZgZ5Fu5IQ SECRET=j-vsWqUP46m_YQ5xDpb4yYt5caT2lA REDIRECT_URI=http://localhost:3000/auth node ./bin/dev.js",
     "test": "jest",
-    "start": "node ./dist/server/server.js"
+    "start": "cross-env CLIENT_ID=i4hWWyP2tIdRHz1mhG5_6A SECRET=83lL18z-T-MsbKAIoplUHugd9eQcKA REDIRECT_URI=https://app-skillreddit.herokuapp.com/auth node ./dist/server/server.js"
   },
   "repository": {
     "type": "git",
